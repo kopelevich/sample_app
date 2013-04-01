@@ -35,4 +35,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+	# suggested in: http://stackoverflow.com/questions/8862967/visit-method-not-found-in-my-rspec
+	config.include Capybara::DSL
 end
